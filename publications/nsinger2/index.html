@@ -1,0 +1,121 @@
+<html>
+<meta charset="utf-8">
+
+<!-- Background theme -->
+<div id="background">
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <img src="img/logo.svg" alt="ci_logo"><img>
+    <div class="bg3"></div>
+    <div class="bg4"></div>
+</div>
+
+<br>
+
+<div id="gvc_header" class="container">
+    <div>
+    <h4> N-Singer2: Improving the naturalness </h4>
+    <h4> of synthetic singing voice for the ballad </h4>
+    <br>
+    <h3 style="display:inline"> Gyeong-Hoon Lee, Tae-Woo Kim, Hanbin Bae et al</h3>
+    <h3 style="font-size:1rem;">{ghlee0304, ktw0114, mskang}@ncsoft.com</h3></div>
+    <br>
+    <div>
+    <h6><h5>Abstract</h5> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        It is important to represent the characteristic of a singer well to generate a natural singing voice. </br>
+        Especially, singing voices in the pop ballad style song have more dynamic and complicated components </br>
+        related to singer's vocal technique, such as vibrato, breathy sound, and F0 fine fluctuations, </br>
+        than children's song style voices. However, it is difficult to model a singing voice in pop ballad </br>
+        because a content and singer identity are entangled with prosody information. </br>
+        In the paper, we propose a system for modeling natural singing voices by disentangling singer-independent </br>
+        and singer-dependent features with multi-singer system. The proposed system uses explicit features </br>
+        to disentangle timbre and prosody components. In the variation predictor of our system, </br>
+        for each input note pitch, we use a difference-based F0 to only model the vibrato and F0 fluctuations </br>
+        related to the characteristic of singer. And we also predict the voiced range of singing voice </br>
+        to prevent predicting pitch in the unvoiced range due to wrong duration of musical note. </br>
+        In addition, we use data-augmentation method such as pitch shift to generate a singing voice with </br>
+        a more stable prosody. Experimental results show that our system can generate a more natural singing voice </br>
+        than the conventional system. </h6></div>
+
+    <br>
+    <div id="toc_container" >
+    <h5>Contents</h5>
+    <ol type="A">
+        <li><a href="#kor">Audio Samples (Korean)</a></li>
+
+            
+    </ol>
+    </div>
+</div>
+
+
+<head>
+  <title> Demo page of N-Singer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="../../images/nc.png">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,700,900&display=swap&subset=korean"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+$(document).ready( function() {
+
+$("#index").load("index.html"); 
+
+});
+</script>
+
+<br>
+<body class="text-center">
+
+    <div id="kor" class="container">
+    <a name="kss"><h3 style="color:black;" font-weight="bold"><br>Audio Samples (Korean)</br></h3></a>
+    <hr color="gray" size="1px"></hr> 
+    <!-- <table>
+      <tr>
+        <td colspan="3">Sentence: 잘 지내는 척 해도 <span class="red_highlight">돌아서면</span> 혼자 <br>
+        <span class="en_pronun">(Pronunciation): jal jinaeneun cheog haedo <span class="red_highlight">'dol-aseomyeon'</span> honja </span>
+        </td>
+      </tr>
+      <tr>
+          <td style="text-align: center;">ATK (Baseline)<br> <span class="red_highlight">Incorrect pronunciation</span>  </td>
+          <td style="text-align: center;">N-Singer (Ours)</td>
+          <td style="text-align: center;">Copy-Synthesis (Ground Truth)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center;"><audio controls><source src="samples/ATK_46_thirty_007.wav"></audio></td>
+          <td style="text-align: center;"><audio controls><source src="samples/nsingerA_46_thirty_007.wav"></audio></td>
+          <td style="text-align: center;"><audio controls><source src="samples/GT_46_thirty_007.wav"></audio></td>
+      </tr>
+    </table> -->
+    &nbsp; 
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+<br><br><br>
+
+
+<body class="text-center">
+    <div id="eng" class="container">
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>
